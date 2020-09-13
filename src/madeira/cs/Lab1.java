@@ -5,6 +5,19 @@ package madeira.cs;
  * Date: 9/3/2020
  **/
 public class Lab1 {
+
+
+    /*
+        Comments
+        ========
+        Excellent work. Well organized code, runs as designed.
+
+        Grade
+        =====
+        A+ 10/10
+     */
+
+
     public static void main(String[] args) {
        /*
          Instructions For Use
