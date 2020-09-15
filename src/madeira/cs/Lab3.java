@@ -27,7 +27,6 @@ public class Lab3 {
         Scanner s = new Scanner(System.in);
         //java got upset when i didn't initialize age so it's just 0 for now
         int age = 0;
-        Boolean validAge = false;
         System.out.println("Enter your age as a number: ");
         //repeat until user enters valid age
         while (!s.hasNextInt()) {
