@@ -28,17 +28,13 @@ public class Lab3 {
         //java got upset when i didn't initialize age so it's just 0 for now
         int age = 0;
         Boolean validAge = false;
+        System.out.println("Enter your age as a number: ");
         //repeat until user enters valid age
-        while (!validAge) {
-            try {
-                System.out.println("Enter your age as a number: ");
-                age = s.nextInt();
-                validAge = true;
-            } catch (InputMismatchException e) {
-                System.out.println("Invalid entry, try again");
-                s.next();
-            }
+        while (!s.hasNextInt()) {
+            s.nextLine(); //clear the invalid input before prompting again
+            System.out.print("Invalid entry, try again ");
         }
+        age = s.nextInt();
         //test for driving
         if (age >= 16) {
             System.out.println("You are permitted to drive!");
