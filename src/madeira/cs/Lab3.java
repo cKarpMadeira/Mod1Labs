@@ -7,6 +7,15 @@ import java.util.InputMismatchException;
 
 public class Lab3 {
     public static void main(String[] args) {
+
+        /*
+            Grades and comments below
+            -------------------------
+            9.75/10
+            Great work here. Concise code. Combined parts you could. 
+            Only edits I'd make are handling more flexible input for the birth month & 
+            potentially also reading day of birth for more accurate estimate.
+        */
 	 /*
            Instructions For Use
            ------
@@ -23,6 +32,7 @@ public class Lab3 {
        */
 
         // Part I code below
+           // Good, concise code.
         //feat. actual error handling this time!
         Scanner s = new Scanner(System.in);
         //java got upset when i didn't initialize age so it's just 0 for now
@@ -55,18 +65,22 @@ public class Lab3 {
 
         // Part II code below
         //define and initialize variables and arrays
-        String birthMonth = "it's initialized stop complaining";
+        String birthMonth = "it's initialized stop complaining"; // be nice to java, she's sensitive
+        // love the use of arrays here
         String months[] = {"january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"};
         String signs[] = {"Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"};
         int days[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         //i'm making the months array a list not bc i need to modify it at all but so i can use .contains on it
         //i just thought it would be simpler instead of having to iterate through the whole thing
-        List<String> monthsList = Arrays.asList(months);
+        List<String> monthsList = Arrays.asList(months); // gettin' fancy eh?
         Boolean validMonth = false;
         //repeat until user enters valid month
         while (!validMonth) {
             try {
                 //read input
+                // if you wanted to get super fancy you could use regular expressions to parse the month
+                // the only thing i'd say here is that i tried to enter February with capital F and was rejected
+                // maybe use .ignoreCase or .toLower/.toUpper
                 System.out.println("Enter your birth month: ");
                 if (s.hasNext()) {
                     birthMonth = s.next();
