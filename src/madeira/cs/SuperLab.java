@@ -3,7 +3,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/*
+Carina-
+As I have come to expect from you: top notch code. Well commented, concise and 
+efficient. I truly hope you find a use for your coding abilities in college and
+beyond. 
 
+*/
 class Artist {
     String name; String album; String twitterHandle; int rating;
 
